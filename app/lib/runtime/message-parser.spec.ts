@@ -28,7 +28,7 @@ describe('StreamingMessageParser', () => {
       ['Foo bar <', 'Foo bar '],
       ['Foo bar <p', 'Foo bar <p'],
       [['Foo bar <', 's', 'p', 'an>some text</span>'], 'Foo bar <span>some text</span>'],
-    ])('should correctly parse chunks and strip out bolt artifacts (%#)', (input, expected) => {
+    ])('should correctly parse chunks and strip out vime artifacts (%#)', (input, expected) => {
       runTest(input, expected);
     });
   });
@@ -38,13 +38,13 @@ describe('StreamingMessageParser', () => {
       ['Foo bar <b', 'Foo bar '],
       ['Foo bar <ba', 'Foo bar <ba'],
       ['Foo bar <bol', 'Foo bar '],
-      ['Foo bar <bolt', 'Foo bar '],
-      ['Foo bar <bolta', 'Foo bar <bolta'],
-      ['Foo bar <boltA', 'Foo bar '],
-      ['Foo bar <boltArtifacs></boltArtifact>', 'Foo bar <boltArtifacs></boltArtifact>'],
-      ['Before <oltArtfiact>foo</boltArtifact> After', 'Before <oltArtfiact>foo</boltArtifact> After'],
-      ['Before <boltArtifactt>foo</boltArtifact> After', 'Before <boltArtifactt>foo</boltArtifact> After'],
-    ])('should correctly parse chunks and strip out bolt artifacts (%#)', (input, expected) => {
+      ['Foo bar <vime', 'Foo bar '],
+      ['Foo bar <vimea', 'Foo bar <vimea'],
+      ['Foo bar <vimeA', 'Foo bar '],
+      ['Foo bar <vimeArtifacs></vimeArtifact>', 'Foo bar <vimeArtifacs></vimeArtifact>'],
+      ['Before <oltArtfiact>foo</vimeArtifact> After', 'Before <oltArtfiact>foo</vimeArtifact> After'],
+      ['Before <vimeArtifactt>foo</vimeArtifact> After', 'Before <vimeArtifactt>foo</vimeArtifact> After'],
+    ])('should correctly parse chunks and strip out vime artifacts (%#)', (input, expected) => {
       runTest(input, expected);
     });
   });
@@ -52,14 +52,14 @@ describe('StreamingMessageParser', () => {
   describe('valid artifacts without actions', () => {
     it.each<[string | string[], ExpectedResult | string]>([
       [
-        'Some text before <boltArtifact title="Some title" id="artifact_1">foo bar</boltArtifact> Some more text',
+        'Some text before <vimeArtifact title="Some title" id="artifact_1">foo bar</vimeArtifact> Some more text',
         {
           output: 'Some text before  Some more text',
           callbacks: { onArtifactOpen: 1, onArtifactClose: 1, onActionOpen: 0, onActionClose: 0 },
         },
       ],
       [
-        ['Some text before <boltArti', 'fact', ' title="Some title" id="artifact_1">foo</boltArtifact> Some more text'],
+        ['Some text before <vimeArti', 'fact', ' title="Some title" id="artifact_1">foo</vimeArtifact> Some more text'],
         {
           output: 'Some text before  Some more text',
           callbacks: { onArtifactOpen: 1, onArtifactClose: 1, onActionOpen: 0, onActionClose: 0 },
@@ -72,7 +72,7 @@ describe('StreamingMessageParser', () => {
           't title="Some title" id="artifact_1"',
           ' ',
           '>',
-          'foo</boltArtifact> Some more text',
+          'foo</vimeArtifact> Some more text',
         ],
         {
           output: 'Some text before  Some more text',
@@ -85,7 +85,7 @@ describe('StreamingMessageParser', () => {
           'fact',
           ' title="Some title" id="artifact_1"',
           ' >fo',
-          'o</boltArtifact> Some more text',
+          'o</vimeArtifact> Some more text',
         ],
         {
           output: 'Some text before  Some more text',
@@ -100,7 +100,7 @@ describe('StreamingMessageParser', () => {
           'title" id="artifact_1">fo',
           'o',
           '<',
-          '/boltArtifact> Some more text',
+          '/vimeArtifact> Some more text',
         ],
         {
           output: 'Some text before  Some more text',
@@ -113,7 +113,7 @@ describe('StreamingMessageParser', () => {
           'fact title="Some title" id="artif',
           'act_1">fo',
           'o<',
-          '/boltArtifact> Some more text',
+          '/vimeArtifact> Some more text',
         ],
         {
           output: 'Some text before  Some more text',
@@ -121,13 +121,13 @@ describe('StreamingMessageParser', () => {
         },
       ],
       [
-        'Before <boltArtifact title="Some title" id="artifact_1">foo</boltArtifact> After',
+        'Before <vimeArtifact title="Some title" id="artifact_1">foo</vimeArtifact> After',
         {
           output: 'Before  After',
           callbacks: { onArtifactOpen: 1, onArtifactClose: 1, onActionOpen: 0, onActionClose: 0 },
         },
       ],
-    ])('should correctly parse chunks and strip out bolt artifacts (%#)', (input, expected) => {
+    ])('should correctly parse chunks and strip out vime artifacts (%#)', (input, expected) => {
       runTest(input, expected);
     });
   });
@@ -135,20 +135,20 @@ describe('StreamingMessageParser', () => {
   describe('valid artifacts with actions', () => {
     it.each<[string | string[], ExpectedResult | string]>([
       [
-        'Before <boltArtifact title="Some title" id="artifact_1"><boltAction type="shell">npm install</boltAction></boltArtifact> After',
+        'Before <vimeArtifact title="Some title" id="artifact_1"><vimeAction type="shell">npm install</vimeAction></vimeArtifact> After',
         {
           output: 'Before  After',
           callbacks: { onArtifactOpen: 1, onArtifactClose: 1, onActionOpen: 1, onActionClose: 1 },
         },
       ],
       [
-        'Before <boltArtifact title="Some title" id="artifact_1"><boltAction type="shell">npm install</boltAction><boltAction type="file" filePath="index.js">some content</boltAction></boltArtifact> After',
+        'Before <vimeArtifact title="Some title" id="artifact_1"><vimeAction type="shell">npm install</vimeAction><vimeAction type="file" filePath="index.js">some content</vimeAction></vimeArtifact> After',
         {
           output: 'Before  After',
           callbacks: { onArtifactOpen: 1, onArtifactClose: 1, onActionOpen: 2, onActionClose: 2 },
         },
       ],
-    ])('should correctly parse chunks and strip out bolt artifacts (%#)', (input, expected) => {
+    ])('should correctly parse chunks and strip out vime artifacts (%#)', (input, expected) => {
       runTest(input, expected);
     });
   });

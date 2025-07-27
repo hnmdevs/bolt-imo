@@ -1,89 +1,89 @@
 /* Color Tokens Light Theme */
 :root,
 :root[data-theme='light'] {
-  --bolt-elements-borderColor: theme('colors.alpha.gray.10');
-  --bolt-elements-borderColorActive: theme('colors.accent.600');
+  --vime-elements-borderColor: theme('colors.alpha.gray.10');
+  --vime-elements-borderColorActive: theme('colors.accent.600');
 
-  --bolt-elements-bg-depth-1: theme('colors.white');
-  --bolt-elements-bg-depth-2: theme('colors.gray.50');
-  --bolt-elements-bg-depth-3: theme('colors.gray.200');
-  --bolt-elements-bg-depth-4: theme('colors.alpha.gray.5');
+  --vime-elements-bg-depth-1: theme('colors.white');
+  --vime-elements-bg-depth-2: theme('colors.gray.50');
+  --vime-elements-bg-depth-3: theme('colors.gray.200');
+  --vime-elements-bg-depth-4: theme('colors.alpha.gray.5');
 
-  --bolt-elements-textPrimary: theme('colors.gray.950');
-  --bolt-elements-textSecondary: theme('colors.gray.600');
-  --bolt-elements-textTertiary: theme('colors.gray.500');
+  --vime-elements-textPrimary: theme('colors.gray.950');
+  --vime-elements-textSecondary: theme('colors.gray.600');
+  --vime-elements-textTertiary: theme('colors.gray.500');
 
-  --bolt-elements-code-background: theme('colors.gray.100');
-  --bolt-elements-code-text: theme('colors.gray.950');
+  --vime-elements-code-background: theme('colors.gray.100');
+  --vime-elements-code-text: theme('colors.gray.950');
 
-  --bolt-elements-button-primary-background: theme('colors.alpha.accent.10');
-  --bolt-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
-  --bolt-elements-button-primary-text: theme('colors.accent.500');
+  --vime-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --vime-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --vime-elements-button-primary-text: theme('colors.accent.500');
 
-  --bolt-elements-button-secondary-background: theme('colors.alpha.gray.5');
-  --bolt-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
-  --bolt-elements-button-secondary-text: theme('colors.gray.950');
+  --vime-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --vime-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --vime-elements-button-secondary-text: theme('colors.gray.950');
 
-  --bolt-elements-button-danger-background: theme('colors.alpha.red.10');
-  --bolt-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
-  --bolt-elements-button-danger-text: theme('colors.red.500');
+  --vime-elements-button-danger-background: theme('colors.alpha.red.10');
+  --vime-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --vime-elements-button-danger-text: theme('colors.red.500');
 
-  --bolt-elements-item-contentDefault: theme('colors.alpha.gray.50');
-  --bolt-elements-item-contentActive: theme('colors.gray.950');
-  --bolt-elements-item-contentAccent: theme('colors.accent.700');
-  --bolt-elements-item-contentDanger: theme('colors.red.500');
-  --bolt-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
-  --bolt-elements-item-backgroundActive: theme('colors.alpha.gray.5');
-  --bolt-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
-  --bolt-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+  --vime-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --vime-elements-item-contentActive: theme('colors.gray.950');
+  --vime-elements-item-contentAccent: theme('colors.accent.700');
+  --vime-elements-item-contentDanger: theme('colors.red.500');
+  --vime-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --vime-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --vime-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --vime-elements-item-backgroundDanger: theme('colors.alpha.red.10');
 
-  --bolt-elements-loader-background: theme('colors.alpha.gray.10');
-  --bolt-elements-loader-progress: theme('colors.accent.500');
+  --vime-elements-loader-background: theme('colors.alpha.gray.10');
+  --vime-elements-loader-progress: theme('colors.accent.500');
 
-  --bolt-elements-artifacts-background: theme('colors.white');
-  --bolt-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
-  --bolt-elements-artifacts-borderColor: var(--bolt-elements-borderColor);
-  --bolt-elements-artifacts-inlineCode-background: theme('colors.gray.100');
-  --bolt-elements-artifacts-inlineCode-text: var(--bolt-elements-textPrimary);
+  --vime-elements-artifacts-background: theme('colors.white');
+  --vime-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --vime-elements-artifacts-borderColor: var(--vime-elements-borderColor);
+  --vime-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --vime-elements-artifacts-inlineCode-text: var(--vime-elements-textPrimary);
 
-  --bolt-elements-actions-background: theme('colors.white');
-  --bolt-elements-actions-code-background: theme('colors.gray.800');
+  --vime-elements-actions-background: theme('colors.white');
+  --vime-elements-actions-code-background: theme('colors.gray.800');
 
-  --bolt-elements-messages-background: theme('colors.gray.100');
-  --bolt-elements-messages-linkColor: theme('colors.accent.500');
-  --bolt-elements-messages-code-background: theme('colors.gray.800');
-  --bolt-elements-messages-inlineCode-background: theme('colors.gray.200');
-  --bolt-elements-messages-inlineCode-text: theme('colors.gray.800');
+  --vime-elements-messages-background: theme('colors.gray.100');
+  --vime-elements-messages-linkColor: theme('colors.accent.500');
+  --vime-elements-messages-code-background: theme('colors.gray.800');
+  --vime-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --vime-elements-messages-inlineCode-text: theme('colors.gray.800');
 
-  --bolt-elements-icon-success: theme('colors.green.500');
-  --bolt-elements-icon-error: theme('colors.red.500');
-  --bolt-elements-icon-primary: theme('colors.gray.950');
-  --bolt-elements-icon-secondary: theme('colors.gray.600');
-  --bolt-elements-icon-tertiary: theme('colors.gray.500');
+  --vime-elements-icon-success: theme('colors.green.500');
+  --vime-elements-icon-error: theme('colors.red.500');
+  --vime-elements-icon-primary: theme('colors.gray.950');
+  --vime-elements-icon-secondary: theme('colors.gray.600');
+  --vime-elements-icon-tertiary: theme('colors.gray.500');
 
-  --bolt-elements-dividerColor: theme('colors.gray.100');
+  --vime-elements-dividerColor: theme('colors.gray.100');
 
-  --bolt-elements-prompt-background: theme('colors.alpha.white.80');
+  --vime-elements-prompt-background: theme('colors.alpha.white.80');
 
-  --bolt-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
-  --bolt-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
-  --bolt-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
-  --bolt-elements-sidebar-buttonText: theme('colors.accent.700');
+  --vime-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --vime-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --vime-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --vime-elements-sidebar-buttonText: theme('colors.accent.700');
 
-  --bolt-elements-preview-addressBar-background: theme('colors.gray.100');
-  --bolt-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
-  --bolt-elements-preview-addressBar-backgroundActive: theme('colors.white');
-  --bolt-elements-preview-addressBar-text: var(--bolt-elements-textSecondary);
-  --bolt-elements-preview-addressBar-textActive: var(--bolt-elements-textPrimary);
+  --vime-elements-preview-addressBar-background: theme('colors.gray.100');
+  --vime-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --vime-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --vime-elements-preview-addressBar-text: var(--vime-elements-textSecondary);
+  --vime-elements-preview-addressBar-textActive: var(--vime-elements-textPrimary);
 
-  --bolt-elements-terminals-background: theme('colors.white');
-  --bolt-elements-terminals-buttonBackground: var(--bolt-elements-bg-depth-4);
+  --vime-elements-terminals-background: theme('colors.white');
+  --vime-elements-terminals-buttonBackground: var(--vime-elements-bg-depth-4);
 
-  --bolt-elements-cta-background: theme('colors.gray.100');
-  --bolt-elements-cta-text: theme('colors.gray.950');
+  --vime-elements-cta-background: theme('colors.gray.100');
+  --vime-elements-cta-text: theme('colors.gray.950');
 
   /* Terminal Colors */
-  --bolt-terminal-background: var(--bolt-elements-terminals-background);
+  --bolt-terminal-background: var(--vime-elements-terminals-background);
   --bolt-terminal-foreground: #333333;
   --bolt-terminal-selection-background: #00000040;
   --bolt-terminal-black: #000000;
@@ -107,89 +107,89 @@
 /* Color Tokens Dark Theme */
 :root,
 :root[data-theme='dark'] {
-  --bolt-elements-borderColor: theme('colors.alpha.white.10');
-  --bolt-elements-borderColorActive: theme('colors.accent.500');
+  --vime-elements-borderColor: theme('colors.alpha.white.10');
+  --vime-elements-borderColorActive: theme('colors.accent.500');
 
-  --bolt-elements-bg-depth-1: theme('colors.gray.950');
-  --bolt-elements-bg-depth-2: theme('colors.gray.900');
-  --bolt-elements-bg-depth-3: theme('colors.gray.800');
-  --bolt-elements-bg-depth-4: theme('colors.alpha.white.5');
+  --vime-elements-bg-depth-1: theme('colors.gray.950');
+  --vime-elements-bg-depth-2: theme('colors.gray.900');
+  --vime-elements-bg-depth-3: theme('colors.gray.800');
+  --vime-elements-bg-depth-4: theme('colors.alpha.white.5');
 
-  --bolt-elements-textPrimary: theme('colors.white');
-  --bolt-elements-textSecondary: theme('colors.gray.400');
-  --bolt-elements-textTertiary: theme('colors.gray.500');
+  --vime-elements-textPrimary: theme('colors.white');
+  --vime-elements-textSecondary: theme('colors.gray.400');
+  --vime-elements-textTertiary: theme('colors.gray.500');
 
-  --bolt-elements-code-background: theme('colors.gray.800');
-  --bolt-elements-code-text: theme('colors.white');
+  --vime-elements-code-background: theme('colors.gray.800');
+  --vime-elements-code-text: theme('colors.white');
 
-  --bolt-elements-button-primary-background: theme('colors.alpha.accent.10');
-  --bolt-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
-  --bolt-elements-button-primary-text: theme('colors.accent.500');
+  --vime-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --vime-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --vime-elements-button-primary-text: theme('colors.accent.500');
 
-  --bolt-elements-button-secondary-background: theme('colors.alpha.white.5');
-  --bolt-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
-  --bolt-elements-button-secondary-text: theme('colors.white');
+  --vime-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --vime-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --vime-elements-button-secondary-text: theme('colors.white');
 
-  --bolt-elements-button-danger-background: theme('colors.alpha.red.10');
-  --bolt-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
-  --bolt-elements-button-danger-text: theme('colors.red.500');
+  --vime-elements-button-danger-background: theme('colors.alpha.red.10');
+  --vime-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --vime-elements-button-danger-text: theme('colors.red.500');
 
-  --bolt-elements-item-contentDefault: theme('colors.alpha.white.50');
-  --bolt-elements-item-contentActive: theme('colors.white');
-  --bolt-elements-item-contentAccent: theme('colors.accent.500');
-  --bolt-elements-item-contentDanger: theme('colors.red.500');
-  --bolt-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
-  --bolt-elements-item-backgroundActive: theme('colors.alpha.white.10');
-  --bolt-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
-  --bolt-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+  --vime-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --vime-elements-item-contentActive: theme('colors.white');
+  --vime-elements-item-contentAccent: theme('colors.accent.500');
+  --vime-elements-item-contentDanger: theme('colors.red.500');
+  --vime-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --vime-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --vime-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --vime-elements-item-backgroundDanger: theme('colors.alpha.red.10');
 
-  --bolt-elements-loader-background: theme('colors.alpha.gray.10');
-  --bolt-elements-loader-progress: theme('colors.accent.500');
+  --vime-elements-loader-background: theme('colors.alpha.gray.10');
+  --vime-elements-loader-progress: theme('colors.accent.500');
 
-  --bolt-elements-artifacts-background: theme('colors.gray.900');
-  --bolt-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
-  --bolt-elements-artifacts-borderColor: var(--bolt-elements-borderColor);
-  --bolt-elements-artifacts-inlineCode-background: theme('colors.gray.800');
-  --bolt-elements-artifacts-inlineCode-text: theme('colors.white');
+  --vime-elements-artifacts-background: theme('colors.gray.900');
+  --vime-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --vime-elements-artifacts-borderColor: var(--vime-elements-borderColor);
+  --vime-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --vime-elements-artifacts-inlineCode-text: theme('colors.white');
 
-  --bolt-elements-actions-background: theme('colors.gray.900');
-  --bolt-elements-actions-code-background: theme('colors.gray.800');
+  --vime-elements-actions-background: theme('colors.gray.900');
+  --vime-elements-actions-code-background: theme('colors.gray.800');
 
-  --bolt-elements-messages-background: theme('colors.gray.800');
-  --bolt-elements-messages-linkColor: theme('colors.accent.500');
-  --bolt-elements-messages-code-background: theme('colors.gray.900');
-  --bolt-elements-messages-inlineCode-background: theme('colors.gray.700');
-  --bolt-elements-messages-inlineCode-text: var(--bolt-elements-textPrimary);
+  --vime-elements-messages-background: theme('colors.gray.800');
+  --vime-elements-messages-linkColor: theme('colors.accent.500');
+  --vime-elements-messages-code-background: theme('colors.gray.900');
+  --vime-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --vime-elements-messages-inlineCode-text: var(--vime-elements-textPrimary);
 
-  --bolt-elements-icon-success: theme('colors.green.400');
-  --bolt-elements-icon-error: theme('colors.red.400');
-  --bolt-elements-icon-primary: theme('colors.gray.950');
-  --bolt-elements-icon-secondary: theme('colors.gray.600');
-  --bolt-elements-icon-tertiary: theme('colors.gray.500');
+  --vime-elements-icon-success: theme('colors.green.400');
+  --vime-elements-icon-error: theme('colors.red.400');
+  --vime-elements-icon-primary: theme('colors.gray.950');
+  --vime-elements-icon-secondary: theme('colors.gray.600');
+  --vime-elements-icon-tertiary: theme('colors.gray.500');
 
-  --bolt-elements-dividerColor: theme('colors.gray.100');
+  --vime-elements-dividerColor: theme('colors.gray.100');
 
-  --bolt-elements-prompt-background: theme('colors.alpha.gray.80');
+  --vime-elements-prompt-background: theme('colors.alpha.gray.80');
 
-  --bolt-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
-  --bolt-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
-  --bolt-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
-  --bolt-elements-sidebar-buttonText: theme('colors.accent.500');
+  --vime-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --vime-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --vime-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --vime-elements-sidebar-buttonText: theme('colors.accent.500');
 
-  --bolt-elements-preview-addressBar-background: var(--bolt-elements-bg-depth-1);
-  --bolt-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
-  --bolt-elements-preview-addressBar-backgroundActive: var(--bolt-elements-bg-depth-1);
-  --bolt-elements-preview-addressBar-text: var(--bolt-elements-textSecondary);
-  --bolt-elements-preview-addressBar-textActive: var(--bolt-elements-textPrimary);
+  --vime-elements-preview-addressBar-background: var(--vime-elements-bg-depth-1);
+  --vime-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --vime-elements-preview-addressBar-backgroundActive: var(--vime-elements-bg-depth-1);
+  --vime-elements-preview-addressBar-text: var(--vime-elements-textSecondary);
+  --vime-elements-preview-addressBar-textActive: var(--vime-elements-textPrimary);
 
-  --bolt-elements-terminals-background: var(--bolt-elements-bg-depth-1);
-  --bolt-elements-terminals-buttonBackground: var(--bolt-elements-bg-depth-3);
+  --vime-elements-terminals-background: var(--vime-elements-bg-depth-1);
+  --vime-elements-terminals-buttonBackground: var(--vime-elements-bg-depth-3);
 
-  --bolt-elements-cta-background: theme('colors.alpha.white.10');
-  --bolt-elements-cta-text: theme('colors.white');
+  --vime-elements-cta-background: theme('colors.alpha.white.10');
+  --vime-elements-cta-text: theme('colors.white');
 
   /* Terminal Colors */
-  --bolt-terminal-background: var(--bolt-elements-terminals-background);
+  --bolt-terminal-background: var(--vime-elements-terminals-background);
   --bolt-terminal-foreground: #eff0eb;
   --bolt-terminal-selection-background: #97979b33;
   --bolt-terminal-black: #000000;
@@ -224,28 +224,28 @@
   --workbench-left: calc(100% - var(--workbench-width));
 
   /* Toasts */
-  --toastify-color-progress-success: var(--bolt-elements-icon-success);
-  --toastify-color-progress-error: var(--bolt-elements-icon-error);
+  --toastify-color-progress-success: var(--vime-elements-icon-success);
+  --toastify-color-progress-error: var(--vime-elements-icon-error);
 
   /* Terminal */
-  --bolt-elements-terminal-backgroundColor: var(--bolt-terminal-background);
-  --bolt-elements-terminal-textColor: var(--bolt-terminal-foreground);
-  --bolt-elements-terminal-cursorColor: var(--bolt-terminal-foreground);
-  --bolt-elements-terminal-selection-backgroundColor: var(--bolt-terminal-selection-background);
-  --bolt-elements-terminal-color-black: var(--bolt-terminal-black);
-  --bolt-elements-terminal-color-red: var(--bolt-terminal-red);
-  --bolt-elements-terminal-color-green: var(--bolt-terminal-green);
-  --bolt-elements-terminal-color-yellow: var(--bolt-terminal-yellow);
-  --bolt-elements-terminal-color-blue: var(--bolt-terminal-blue);
-  --bolt-elements-terminal-color-magenta: var(--bolt-terminal-magenta);
-  --bolt-elements-terminal-color-cyan: var(--bolt-terminal-cyan);
-  --bolt-elements-terminal-color-white: var(--bolt-terminal-white);
-  --bolt-elements-terminal-color-brightBlack: var(--bolt-terminal-brightBlack);
-  --bolt-elements-terminal-color-brightRed: var(--bolt-terminal-brightRed);
-  --bolt-elements-terminal-color-brightGreen: var(--bolt-terminal-brightGreen);
-  --bolt-elements-terminal-color-brightYellow: var(--bolt-terminal-brightYellow);
-  --bolt-elements-terminal-color-brightBlue: var(--bolt-terminal-brightBlue);
-  --bolt-elements-terminal-color-brightMagenta: var(--bolt-terminal-brightMagenta);
-  --bolt-elements-terminal-color-brightCyan: var(--bolt-terminal-brightCyan);
-  --bolt-elements-terminal-color-brightWhite: var(--bolt-terminal-brightWhite);
+  --vime-elements-terminal-backgroundColor: var(--bolt-terminal-background);
+  --vime-elements-terminal-textColor: var(--bolt-terminal-foreground);
+  --vime-elements-terminal-cursorColor: var(--bolt-terminal-foreground);
+  --vime-elements-terminal-selection-backgroundColor: var(--bolt-terminal-selection-background);
+  --vime-elements-terminal-color-black: var(--bolt-terminal-black);
+  --vime-elements-terminal-color-red: var(--bolt-terminal-red);
+  --vime-elements-terminal-color-green: var(--bolt-terminal-green);
+  --vime-elements-terminal-color-yellow: var(--bolt-terminal-yellow);
+  --vime-elements-terminal-color-blue: var(--bolt-terminal-blue);
+  --vime-elements-terminal-color-magenta: var(--bolt-terminal-magenta);
+  --vime-elements-terminal-color-cyan: var(--bolt-terminal-cyan);
+  --vime-elements-terminal-color-white: var(--bolt-terminal-white);
+  --vime-elements-terminal-color-brightBlack: var(--bolt-terminal-brightBlack);
+  --vime-elements-terminal-color-brightRed: var(--bolt-terminal-brightRed);
+  --vime-elements-terminal-color-brightGreen: var(--bolt-terminal-brightGreen);
+  --vime-elements-terminal-color-brightYellow: var(--bolt-terminal-brightYellow);
+  --vime-elements-terminal-color-brightBlue: var(--bolt-terminal-brightBlue);
+  --vime-elements-terminal-color-brightMagenta: var(--bolt-terminal-brightMagenta);
+  --vime-elements-terminal-color-brightCyan: var(--bolt-terminal-brightCyan);
+  --vime-elements-terminal-color-brightWhite: var(--bolt-terminal-brightWhite);
 }

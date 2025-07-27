@@ -1,16 +1,16 @@
-import type { ActionType, BoltAction, BoltActionData, FileAction, ShellAction } from '~/types/actions';
-import type { BoltArtifactData } from '~/types/artifact';
+import type { ActionType, VimeAction, VimeActionData, FileAction, ShellAction } from '~/types/actions';
+import type { VimeArtifactData } from '~/types/artifact';
 import { createScopedLogger } from '~/utils/logger';
 import { unreachable } from '~/utils/unreachable';
 
-const ARTIFACT_TAG_OPEN = '<boltArtifact';
-const ARTIFACT_TAG_CLOSE = '</boltArtifact>';
-const ARTIFACT_ACTION_TAG_OPEN = '<boltAction';
-const ARTIFACT_ACTION_TAG_CLOSE = '</boltAction>';
+const ARTIFACT_TAG_OPEN = '<vimeArtifact';
+const ARTIFACT_TAG_CLOSE = '</vimeArtifact>';
+const ARTIFACT_ACTION_TAG_OPEN = '<vimeAction';
+const ARTIFACT_ACTION_TAG_CLOSE = '</vimeAction>';
 
 const logger = createScopedLogger('MessageParser');
 
-export interface ArtifactCallbackData extends BoltArtifactData {
+export interface ArtifactCallbackData extends VimeArtifactData {
   messageId: string;
 }
 
@@ -18,7 +18,7 @@ export interface ActionCallbackData {
   artifactId: string;
   messageId: string;
   actionId: string;
-  action: BoltAction;
+  action: VimeAction;
 }
 
 export type ArtifactCallback = (data: ArtifactCallbackData) => void;
@@ -46,8 +46,8 @@ interface MessageState {
   position: number;
   insideArtifact: boolean;
   insideAction: boolean;
-  currentArtifact?: BoltArtifactData;
-  currentAction: BoltActionData;
+  currentArtifact?: VimeArtifactData;
+  currentAction: VimeActionData;
   actionId: number;
 }
 
@@ -110,7 +110,7 @@ export class StreamingMessageParser {
                */
               actionId: String(state.actionId - 1),
 
-              action: currentAction as BoltAction,
+              action: currentAction as VimeAction,
             });
 
             state.insideAction = false;
@@ -136,7 +136,7 @@ export class StreamingMessageParser {
                 artifactId: currentArtifact.id,
                 messageId,
                 actionId: String(state.actionId++),
-                action: state.currentAction as BoltAction,
+                action: state.currentAction as VimeAction,
               });
 
               i = actionEndIndex + 1;
@@ -191,7 +191,7 @@ export class StreamingMessageParser {
               const currentArtifact = {
                 id: artifactId,
                 title: artifactTitle,
-              } satisfies BoltArtifactData;
+              } satisfies VimeArtifactData;
 
               state.currentArtifact = currentArtifact;
 
@@ -271,7 +271,7 @@ export class StreamingMessageParser {
 
 const createArtifactElement: ElementFactory = (props) => {
   const elementProps = [
-    'class="__boltArtifact__"',
+    'class="__vimeArtifact__"',
     ...Object.entries(props).map(([key, value]) => {
       return `data-${camelToDashCase(key)}=${JSON.stringify(value)}`;
     }),
