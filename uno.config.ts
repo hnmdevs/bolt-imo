@@ -114,7 +114,7 @@ export default defineConfig({
   theme: {
     colors: {
       ...COLOR_PRIMITIVES,
-      bolt: {
+      vime: {
         elements: {
           borderColor: 'var(--vime-elements-borderColor)',
           borderColorActive: 'var(--vime-elements-borderColorActive)',
